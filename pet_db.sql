@@ -856,7 +856,7 @@ CREATE TABLE `post_like` (
 
 CREATE TABLE `post_list_admin` (
   `post_sid` int(11) NOT NULL COMMENT '文章編號',
-  `admin_sid` int(11) NOT NULL COMMENT '管理者編號',
+  `admin_name` varchar(255) NOT NULL COMMENT '管理者名稱',
   `board_sid` int(11) NOT NULL COMMENT '看板編號 (FK from 看板分類)',
   `post_title` varchar(255) CHARACTER SET utf8mb4 NOT NULL COMMENT '文章標題',
   `post_content` varchar(255) CHARACTER SET utf8mb4 NOT NULL COMMENT '文章內容',
